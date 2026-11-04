@@ -1,5 +1,14 @@
+body{
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+}
+
 main > article {
     border: 1px solid red;
     resize: both;
     overflow: auto;
 }
+
