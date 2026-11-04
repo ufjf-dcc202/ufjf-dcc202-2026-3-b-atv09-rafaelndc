@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        header, footer{
+            background-color: aquamarine;
+        }
+        section{
+            background-color: antiquewhite;
+        }
+        nav {
+            background-color: lightgreen;
+        }
+        aside{
+            background-color: blueviolet;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            border: 1px solid blue;
+            background-color: rgb(252, 222, 158);
+            padding: 0.5em;
+        }
+        .holy-grail{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+        }
+        .holy-grail > header {
+            grid-column: 1 / 4;
+        }
+        .holy-grail > footer{
+            grid-column: 1 / 4;
+        }
+        .holy-grail1 > section {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="holy-grail">
+            <header>
+                <h1>Exemplo 05: Holy Grail</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facilis numquam impedit libero expedita quas accusantium dolorem aspernatur non consequatur recusandae, sed magnam natus assumenda rem velit reiciendis pariatur voluptates!</p>
+                <p>Sed deleniti alias expedita et adipisci, obcaecati voluptatibus, quam iure totam labore, odio porro. Quo corporis eligendi, fugiat excepturi ex fuga neque, sit quis quae dignissimos hic optio voluptas repellat.</p>
+                <p>Nemo rerum, ea natus totam porro distinctio placeat sequi harum cumque nostrum ut suscipit temporibus aliquam possimus impedit asperiores inventore dolorum beatae excepturi ipsam dolorem expedita veritatis fugiat! Voluptatum, nisi?</p>
+            </section>
+            <aside>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </aside>
+            <footer>
+                &COPY; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
